@@ -44,7 +44,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+  background: rgba(217, 217, 217, 0.1);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -167,16 +167,16 @@ ol {
 }
 
 .button {
+  padding: 0;
+  border: 1px solid #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  cursor: pointer;
-  padding: 0;
   line-height: 34px;
   height: 34px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -230,14 +230,13 @@ ol {
 }
 
 .content__list-item {
-  padding: 0 3px;
+  padding: 0 2px;
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  
 }
 
 .content__video-card-thumbnail {
@@ -245,6 +244,7 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
+  margin-right: -2px;
 }
 
 .content__video-card-description-container {
